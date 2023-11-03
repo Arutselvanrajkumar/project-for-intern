@@ -1,0 +1,33 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>AR wedding invitation</title>
+        <link rel="icon" href="c:\new project file for html\icorn image.png">
+        <link rel="stylesheet" href="styel.css">
+     </head>
+    <body>
+        <div class="container">
+        <img class="image1"src="c:\new project file for html\title image.jpg"width="1200" height="800"alt="Image 1">
+        <img  class="image2"src="c:\new project file for html\title image.jpg"width="120" height="80"alt="Image 2">
+        <div class="text-overlay">wedding invitarion</div>
+        <button class="button">Click Me</button>
+    </div> 
+    <h1 id="toggle-heading">Click Me</h1>
+    <p id="toggle-paragraph" class="hidden">This is a hidden paragraph. Click the heading to show or hide this text.</p>
+
+    <script>
+        // JavaScript code to handle the toggle effect
+        var heading = document.getElementById('toggle-heading');
+        var paragraph = document.getElementById('toggle-paragraph');
+
+        heading.addEventListener('click', function() {
+            if (paragraph.classList.contains('hidden')) {
+                paragraph.classList.remove('hidden');
+            } else {
+                paragraph.classList.add('hidden');
+            }
+        });
+    </script>
+    
+    </body>
+</html>
